@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; url=https://roblox.com">
   <title>Redirecting...</title>
+  <script>
+    const url = "https://new-link.com";
+    window.location.replace(url);
+  </script>
 </head>
 <body>
-  <p>Redirecting... If nothing happens, click <a href="https://roblox.com">here</a>.</p>
+  <p>Redirecting... If nothing happens, click <a id="redirectLink" href="#">here</a>.</p>
+  <script>
+    document.getElementById("redirectLink").href = url;
+  </script>
 </body>
 </html>
